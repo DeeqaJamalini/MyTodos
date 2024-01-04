@@ -16,3 +16,8 @@ This is a simple TodoList application built with React, TypeScript and SCSS. It 
 visit on the hosted site below to get started
 
 https://deeqajamalini.github.io/MyTodos/ 
+
+
+below is also an image of the component tree 
+
+

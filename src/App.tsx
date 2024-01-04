@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import ToDoList from "../src/components/TodoList"
+
+import TodoList from "../src/components/TodoList/TodoList"
 
 import './App.scss'
 
@@ -10,7 +10,8 @@ function App() {
     <>
       <div>
 
-        
+      <h1>Todo App</h1>
+      <TodoList />
       </div>
      
     </>

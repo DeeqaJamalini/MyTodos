@@ -24,6 +24,7 @@ const handleAddTodo = () => {
             type= "text"
             value= {newTodo}
             onChange ={(e) => setNewTodo(e.target.value)}
+            placeholder="Add your task here..."
             
             />
             <button onClick={handleAddTodo}>+</button>

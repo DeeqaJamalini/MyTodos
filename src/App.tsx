@@ -10,7 +10,7 @@ function App() {
     <>
       <div>
 
-      <h1>Todo App</h1>
+      <h1>My Todos</h1>
       <TodoList />
       </div>
      

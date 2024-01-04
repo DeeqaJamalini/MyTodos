@@ -3,9 +3,9 @@ import { useState } from "react"
 
 import AddTodo from "../AddTodo/AddTodo" 
 import CompleteTodo from "../CompleteTodo/CompleteTodo"
-//import DeleteTodo from "../DeleteTodo/DeleteTodo"
 //import ResetTodo from "../ResetTodo/ResetTodo"
 import { v4 as uuidv4 } from 'uuid';
+import DeleteTodo from "../DeleteTodo/DeleteTodo";
 
 
 
@@ -35,6 +35,11 @@ const TodoList = () => {
     );
   };
 
+  const deleteTodo = (id: string) => {
+    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
+  };
+
+
 
 
   return (
@@ -45,7 +50,7 @@ const TodoList = () => {
           <div key={todo.id}>
             <CompleteTodo  onCompleteTodo={() => completeTodo(todo.id)} />
             <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>{todo.text}</span>
-            
+            <DeleteTodo onDeleteTodo={() => deleteTodo(todo.id)}/>
           </div>
         ))}
       </ul>

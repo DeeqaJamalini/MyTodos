@@ -33,6 +33,11 @@
       display: flex;
       align-items: center;
 
+      span {
+        max-width: 190px; 
+        word-wrap: break-word; 
+      }
+
       button {
         margin-left: auto;
         display: flex;

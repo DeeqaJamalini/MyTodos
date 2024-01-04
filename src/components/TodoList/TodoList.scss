@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+.todolist {
+  &__header {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    &--reset {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    font-family: "Lato", sans-serif;
+
+    &--items {
+      padding: 5px;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 250px;
+
+      display: flex;
+      align-items: center;
+
+      button {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        width: 30px;
+        font-size: 20px;
+        border: none;
+        background-color: white;
+      }
+    }
+
+    &--placeholder {
+      font-family: "lato", "sans-serif";
+      text-align: center;
+    }
+  }
+}

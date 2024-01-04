@@ -1,18 +1,15 @@
-import "./DeleteTodo.scss"
-
-
+import "./DeleteTodo.scss";
 
 type DeleteTodoProps = {
-    onDeleteTodo: () => void
-}
+  onDeleteTodo: () => void;
+};
 
+const DeleteTodo = ({ onDeleteTodo }: DeleteTodoProps) => {
+  return (
+    <button className="deleteButton" onClick={onDeleteTodo}>
+      🗑️
+    </button>
+  );
+};
 
-const DeleteTodo = ({onDeleteTodo} : DeleteTodoProps) => {
-
-    return (
-        <button onClick={onDeleteTodo}>🗑️</button>
-    )
-
-}
-
-export default DeleteTodo
+export default DeleteTodo;

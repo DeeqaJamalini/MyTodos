@@ -1,17 +1,15 @@
-import "./ResetTodo.scss"
-
+import "./ResetTodo.scss";
 
 type ResetTodoProps = {
-    onReset: () => void
-}
+  onReset: () => void;
+};
 
+const ResetTodo = ({ onReset }: ResetTodoProps) => {
+  return (
+    <button className="resetbutton" onClick={onReset}>
+      Reset
+    </button>
+  );
+};
 
-const ResetTodo = ({onReset}: ResetTodoProps) => {
-
-    return (
-        <button onClick={onReset}>Reset</button>
-    )
-
-}
-
-export default ResetTodo
+export default ResetTodo;
